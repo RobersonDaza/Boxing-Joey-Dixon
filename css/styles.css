@@ -1,0 +1,695 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?5ei50w');
+  src:  url('../fonts/icomoon.eot?5ei50w#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?5ei50w') format('truetype'),
+    url('../fonts/icomoon.woff?5ei50w') format('woff'),
+    url('../fonts/icomoon.svg?5ei50w#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e900";
+}
+
+
+body{
+    margin: 0;
+}
+
+.header{
+    background: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+  }
+  
+  .header a{
+    color: #BDBDBD;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+  }
+  
+  .header a:hover{
+    color: #ff4f33;
+    transition: color 0.4s ease 0s;
+  }
+  
+  ol,ul{
+    margin: 0;
+  }
+  
+  /* .menu{
+    height: inherit;
+} */
+
+  .menu ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .hero{
+    background-image: 
+      radial-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.7)
+      ),
+      url(https://images.unsplash.com/photo-1526792903869-f3035bfc7f29?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b1c4a924aaa410007f9a18570a1c7b7c),
+      url(https://images.unsplash.com/photo-1530679546306-f0ff3e83d96b?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=58ac089776d8c50882b9e13be577098f);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-color: #fe6148; 
+    background-blend-mode: hard-light;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+  }
+  
+  .hero h1{
+    font-size: 70px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .hero h3{
+    font-size: 30px;
+    letter-spacing: 12px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    margin-top:20px;
+  }
+  
+  .button{
+    text-decoration: none;
+    border: 2px solid rgba(254, 97, 72, 1);
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  .button:hover{
+    border: 2px solid white;
+    transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+  }
+
+  .categories{
+    display: flex;
+  }
+
+  .beginners, .professionals{
+    display: flex;
+    width: 50%;
+    height: 400px;
+    background-color: rgb(59, 59, 59);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 300;
+}
+
+.beginners{
+    justify-content: flex-end;
+    background-image: url('../images/adult-athlete-black-and-white-163403.jpg');
+    
+}
+
+.beginners h3{
+    position: relative;
+    top: 130px;
+    letter-spacing: 8px;
+}
+
+.professionals h3{
+    position: relative;
+    top: 130px;
+    left: 135px;
+    letter-spacing: 8px;
+}
+
+.beginners img{
+    position: relative;
+    top: 190px;
+    right: 165px;
+}
+
+.professionals img{
+    position: relative;
+    top: 190px;
+    right: 90px;
+}
+
+.professionals{
+    justify-content: flex-start;
+    background-image: url('../images/black-wallpaper-black-and-white-boxer-3797.jpg');
+  }
+
+.beginners:hover, .professionals:hover{
+    background-color: #fe6148;
+  }
+
+.about{
+  background-image: url('../images/cristian-baron-27345-unsplash.jpg');
+  height: 1000px;
+  object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgb(116, 114, 114);
+  background-blend-mode: multiply;
+}
+
+.coach{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  left: 200px;
+  width: 330px;
+}
+
+.coach h3{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 5em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 30px; 
+}
+
+.coach p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  font-size: 1.28em;
+}
+
+.social-link{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 20px 10px;
+  background-size: 35px 35px;
+}
+
+.social-link.twitter{
+  background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook{
+  background-image: url('../images/facebook.svg');
+}
+
+.social-link.instagram{
+  background-image: url('../images/instagram.svg');
+}
+
+.winnings{
+  background-image: 
+  radial-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+    ),
+    url('../images/lucas-benjamin-729304-unsplash.jpg'),
+    url('../images/beginners.jpg');
+    background-size: cover;
+    background-color: #fe6148; 
+    background-blend-mode: hard-light;
+    height: 500px;
+    padding: 20px 0;
+  }
+  
+  .title-winnings{
+    display: flex;
+    justify-content: center;
+  }
+
+  .title-winnings h2{
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 4em;
+    letter-spacing: 12px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+  }
+
+  .container .uno, .dos, .tres, .cuatro{
+    width: 300px;
+  }
+
+  .container .dos, .tres, .cuatro{
+    margin-left: 50px;
+  }
+
+  
+  .container h3{
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 150px;
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  
+  .container .uno h3{
+    margin-top: 10px;
+  }
+
+  .container p{
+   font-family: 'Open Sans Condensed', sans-serif;
+   color: white;
+   font-size: 1.8em;
+   text-transform: uppercase;
+  }
+  
+  .container-session{
+    text-align: center;
+  }
+  
+  .container-session h3{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  font-size: 1.8em;
+  letter-spacing: 12px;
+  margin-bottom: 60px;
+  }
+  
+  .session{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #2f2b32;
+  }
+
+  .button-session{
+    text-decoration: none;
+    border: 2px solid rgba(254, 97, 72, 1);
+    border-radius: 50px;
+    padding: 10px 40px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  .studio{
+    background-image: url('../images/rawpixel-746017-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(95, 95, 95);
+    background-blend-mode: multiply;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 85px 0;
+  }
+  
+  .studio h2{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  font-size: 5em;
+  letter-spacing: 12px;
+  margin-bottom: 0;
+}
+
+.studio .parrafo{
+  width: 450px;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  font-size: 1.3em;
+}
+
+.studio .title-studio{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  font-size: 2em;
+  letter-spacing: 12px;
+  margin-top: 2em;
+  margin-bottom: 12px;
+  
+}
+
+.studio .subtitle-studio{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact{
+  background-color: #fe6148;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-name{
+  width: 50%;
+  position: relative;
+  left: 200px;
+}
+
+
+.contact h3{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.7em;
+  letter-spacing: 10px;
+  margin-bottom: 1em;
+}
+
+.contact p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  width: 250px;
+}
+
+.form-box{
+  width: 50%;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form input{
+  width: 250px;
+  margin-bottom: 10px;
+  background: transparent;
+  border: 2px solid;
+  padding: 5px;
+}
+
+input::placeholder {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
+  font-size: 1.5em;
+}
+
+.form button{
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: black;
+  color: #fe6148;
+  font-size: 1.1em;
+  border: none;
+  padding: 5px;
+}
+
+.footer{
+  background-color: #ff4f33;
+}
+.footer p{
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+.burguer-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .3);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 3;
+  left: 10px;
+  top: 10px;
+  color: #ff4f33;
+}
+
+@media only screen and (max-width: 1023px){
+  .about{
+    background-position: center center;
+    /* height: 950px; */
+  }
+
+  .winnings{
+    height: auto;
+  }
+
+  .container{
+    display: block;
+  }
+
+  .container .uno, .dos, .tres, .cuatro {
+    width: initial;
+    text-align: center;
+  }
+
+  .container h3{
+    width: initial;
+  }
+
+  .container p{
+    margin-top: 10px;
+  }
+}
+
+ @media only screen and (max-width: 830px){
+    .hero h1{
+      font-size: 60px;
+    }
+    .hero h3{
+      font-size: 25px;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+
+    .professionals h3 {
+      position: relative;
+      top: 130px;
+      left: 100px;
+      letter-spacing: 8px;
+    }
+
+    .professionals img {
+      position: relative;
+      top: 190px;
+      right: 110px;
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+
+    .menu{
+      position: fixed;
+      background: rgba(138, 33, 17, 0.9);
+      z-index: 2;
+      top: 0;
+      left: -100vw;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+    }
+
+    .menu ol{
+      flex-direction: column;
+      line-height: 3em;
+    }
+
+    .menu.is-active{
+      left: 0;
+    }
+
+    .header{
+      height: auto;
+    }
+
+    .header a{
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .categories{
+      display: block;
+    }
+
+    .beginners, .professionals{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .beginners h3, .professionals h3{
+      position: unset;
+    }
+
+    .beginners img, .professionals img{
+      position: unset;
+    }
+
+    .beginners figure, .professionals figure {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .about{
+      /* background-position: center center; */
+      height: 950px;
+    }
+
+    .coach {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding: 3em;
+      position: unset;
+      width: 330px;
+    }
+
+    .coach h3{
+      margin-top: 0;
+      font-size: 3.5em;
+    }
+
+    .coach p{
+      font-size: 1.2em;
+    }
+
+    .studio h2{
+      font-size: 3em;
+    }
+
+    .studio .parrafo{
+      font-size: 1.2em;
+      width: 300px;
+    }
+
+    .studio .title-studio{
+      font-size: 1.7em;
+    }
+
+    .studio .subtitle-studio{
+      font-size: 1.3em;
+    }
+
+    .article-name {
+      width: auto;
+      position: unset;
+      padding-right: 20px;
+    }
+
+    .contact{
+      display: block;
+      height: 500px;
+    }
+
+    .article-name{
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-right: 0;
+      padding-top: 20px;
+    }
+
+    .article-name p{
+      width: 320px;
+      margin-top: 0;
+    }
+
+    .form-box {
+      width: auto;
+    }
+
+    .burguer-button{
+      display: block;
+    }
+
+    .title-winnings h2 {
+      font-size: 3.5em;
+    }
+
+    .container .dos, .tres, .cuatro{
+      margin-left: 0px;
+    }
+
+    .container-session h3{
+      margin-bottom: 40px;
+      width: 200px;
+    }
+
+    .container-session a{
+      padding: 10px 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 420px){
+    .hero h1{
+      font-size: 55px;
+    }
+    .hero h3{
+      font-size: 23px;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+
+    .coach{
+      padding-right: 0;
+    }
+  }  

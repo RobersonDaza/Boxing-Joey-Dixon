@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JOEY DIXON</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <i class="icon-menu burguer-button" id="burger-menu"></i>
+    <!-- header -->
+    <header class="header">
+      <nav class="menu">
+        <ol>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">TRAINING</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">WINNINGS</a></li>
+          <li><a href="#">THE STUDIO</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">BOOK ONLINE</a></li>
+        </ol>
+      </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- hero -->
+    <section class="hero">
+        <h1>JOEY DIXON</h1>
+        <h3>TRAINING WITH A WORLD CHAMPION</h3>
+        <a href="#" class="button">Book Now</a>
+    </section>
+    <!-- /hero -->
+
+    <!-- categories -->
+    <section class="categories">
+        <article class="beginners">
+            <h3>Beginners</h3>
+            <figure>
+                <img src="./images/right-arrow.png" width="45" height="45" alt="boton">
+            </figure>
+        </article>
+        <article class="professionals">
+            <h3>Professionals</h3>
+            <figure>
+                <img src="./images/right-arrow.png" width="45" height="45" alt="boton">
+            </figure>
+        </article>
+    </section>
+    <!-- /categories -->
+
+    <!-- About -->
+    <section class="about">
+        <div class="coach">
+            <h3>Meet the Coach</h3>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
+            me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page.
+            I’m a great place for you to tell a story and let your users know a little more about you.</p> 
+
+            <p>This is a great space to write long text about your company and your services. You can use this space to go into a 
+            little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of 
+            how you came up with the idea for your business and what makes you different from your competitors. Make your company stand 
+            out and show your visitors who you are.</p>
+            <div class="social">
+                    <a class="social-link twitter" href="#"></a>
+                    <a class="social-link facebook" href="#"></a>
+                    <a class="social-link instagram" href="#"></a>
+            </div>
+        </div>
+    </section>
+    <!-- /About -->
+
+    <!-- winnings -->
+    <section class="winnings">
+        <div class="title-winnings">
+            <h2>WINNINGS</h2>
+        </div>
+    <div class="container">
+        <div class="uno">
+            <h3>15</h3>
+            <p>15 years of boxing experience</p>
+        </div>
+        <div class="dos">
+            <h3>3</h3>
+            <p> 3 times wba intercontinental cruiserweight</p>
+        </div>
+        <div class="tres">
+            <h3>4</h3>
+            <p>4 times wbc intercontinental cruiserweight</p>
+        </div>
+        <div class="cuatro">
+            <h3>2</h3>
+            <p>2 times ibf intercontinental cruiserweight</p>
+        </div>
+    </div>    
+    </section>
+    <!-- /winnings -->
+
+    <!-- session -->
+    <section class="session">
+        <div class="container-session">
+            <h3>START TRAINING TODAY</h3>
+            <a href="#" class="button-session">Book a Session</a>
+        </div>
+    </section>
+    <!-- /session -->
+
+    <!-- studio -->
+    <section class="studio">
+        <h2>THE STUDIO</h2>
+        <P class="parrafo">I'm a paragraph. Click here to add your own text and edit me. 
+        It’s easy. Just click “Edit Text” or double click me to add your 
+        own content and make changes to the font.</P>
+
+        <h3 class="title-studio">ADDRESS</h3>
+        <p class="subtitle-studio">500 TERRY FRANCOIS ST. <br>
+        SF, CA 94158 </p>
+
+        <h3 class="title-studio">HOURS</h3>
+        <p class="subtitle-studio"> MONDAY - FRIDAY <br>
+        6:30AM - 7:00PM </p>
+    </section>
+    <!-- /studio -->
+
+    <!-- contact -->
+    <section class="contact">
+        <div class="article-name">
+            <h3>CONCTACT ME</h3>
+            <p>WRITE OR CALL ME IF YOU HAVE MORE QUESTIONS</p>
+            <p>INFO@MYSITE.COM <br>
+            123-456-7890 </p>
+        </div>
+        <div class="form-box">
+            <form action="" class="form">
+                <input type="text" placeholder="Name*" id="email">
+                <input type="text" placeholder="Email*">
+                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="mensaje">
+                <button>Send</button>   
+            </form> 
+        </div>
+    </section>
+    <!-- /contact -->
+
+    <!-- footer -->
+    <div class="footer">
+            <p>2023 BY JOEY DIXON. PROUDLY CREATED WITH RD</p>
+    </div>
+    <!-- /footer -->
+
+    <script>
+            // console.log('Hola Mundo');
+            // console.log(window.matchMedia('screen and (max-width: 767px))');
+            const ipad = window.matchMedia('screen and (max-width: 767px)')
+            const menu = document.querySelector('.menu');
+            // console.log('menu');
+            const burguerButton = document.querySelector('#burger-menu');
+            // console.log('burguerButton');
+    
+    
+            ipad.addListener(validation)
+            
+            function validation(event){
+                if (event.matches){
+                    burguerButton.addEventListener('click', hideShow)
+                } else{
+                    burguerButton.removeEventListener('click', hideShow)
+                }
+            }
+            validation(ipad);
+    
+            function hideShow(){
+                if (menu.classList.contains('is-active')){
+                    menu.classList.remove('is-active');
+                } else{
+                    menu.classList.add('is-active');
+                }
+            }
+        </script>
+
+</body>
+</html>
