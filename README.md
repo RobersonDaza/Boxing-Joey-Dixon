@@ -1,2 +1,2 @@
 # Boxing-Joey-Dixon
-Website with html5, css3, JS
+Website boxing with html5, css3, JS
